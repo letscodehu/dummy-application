@@ -1,0 +1,36 @@
+{
+  "name" : "letscodehu/dummy-application",
+  "version" : "1.0.0",
+  "require" : {
+    "letscodehu/dummy-service-layer" : "^1.0.0",
+    "letscodehu/dummy-persistence-layer" : "^1.0.0",
+    "letscodehu/dummy-presentation-layer" : "^1.0.0"
+  },
+  "repositories" : [
+    {
+      "type" : "vcs",
+      "url" : "https://github.com/letscodehu/dummy-service-layer"
+    },
+    {
+      "type" : "vcs",
+      "url" : "https://github.com/letscodehu/dummy-persistence-layer"
+    },
+    {
+      "type" : "vcs",
+      "url" : "https://github.com/letscodehu/dummy-presentation-layer"
+    },
+    {
+      "type" : "vcs",
+      "url" : "https://github.com/letscodehu/persistence-layer-api"
+    },
+    {
+      "type" : "vcs",
+      "url" : "https://github.com/letscodehu/service-layer-api"
+    }
+  ],
+  "autoload" : {
+    "psr-4" : {
+      "Letscodehu\\" : "app/"
+    }
+  }
+}
